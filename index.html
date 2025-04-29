@@ -17,7 +17,12 @@
                     <p>The Wheel of Time Collection</p>
                 </a>
             </div>
-            <ul class="nav-links">
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a class="link">Store</a></li>
                 <li><a class="link">Contact</a></li>
                 <li><a class="link">About</a></li>
@@ -27,10 +32,95 @@
             <div class="heroshot-image" id="slideshow">
                 <img src="img/heroshot1.png" alt="Slide 1" class="heroshot-img">
                 <img src="img/heroshot2.png" alt="Slide 2" class="heroshot-img">
+                <img src="img/heroshot3.png" alt="Slide 3" class="heroshot-img">
+                <img src="img/heroshot4.png" alt="Slide 4" class="heroshot-img">
             </div>
         </section>
-    <main>
+        <main>
+            <section class="media-gallery">
+                <div class="gallery-item">
+                    <img src="img/book 1.jpg" alt="Book 1">
+                    <p>Book 1</p>
+                    <p class="book-title">The Eye of The World</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 2.jpg" alt="Book 2">
+                    <p>Book 2</p>
+                    <p class="book-title">The Great Hunt</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 3.jpg" alt="Book 3">
+                    <p>Book 3</p>
+                    <p class="book-title">The Dragon Reborn</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 4.jpg" alt="Book 4">
+                    <p>Book 4</p>
+                    <p class="book-title">The Shadow Rising</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 5.jpg" alt="Book 5">
+                    <p>Book 5</p>
+                    <p class="book-title">The Fires of Heaven</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 6.jpg" alt="Book 6">
+                    <p>Book 6</p>
+                    <p class="book-title">Lord of Chaos</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 7.jpg" alt="Book 7">
+                    <p>Book 7</p>
+                    <p class="book-title">A Crown of Swords</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 8.jpg" alt="Book 8">
+                    <p>Book 8</p>
+                    <p class="book-title">The Path of Daggers</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 9.jpg" alt="Book 9">
+                    <p>Book 9</p>
+                    <p class="book-title">Winter's Heart</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 10.jpg" alt="Book 10">
+                    <p>Book 10</p>
+                    <p class="book-title">Crossroads of Twilight</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 11.jpg" alt="Book 11">
+                    <p>Book 11</p>
+                    <p class="book-title">Knife of Dreams</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 12.jpg" alt="Book 12">
+                    <p>Book 12</p>
+                    <p class="book-title">The Gathering Storm</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 13.jpg" alt="Book 13">
+                    <p>Book 13</p>
+                    <p class="book-title">Towers of Midnight</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/book 14.jpg" alt="Book 14">
+                    <p>Book 14</p>
+                    <p class="book-title">A Memory of Light</p>
+                </div>
+            </section>
+        </main>
+        <script src="js/slideshow.js"></script>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
 
-    </main>
-    <script src="js/slideshow.js"></script>
-</body>
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+    </body>
+    <footer>
+        <p>&copy; 2025 Ty Oleson</p>
+    </footer>
+</html>
